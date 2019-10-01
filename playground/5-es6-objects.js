@@ -27,8 +27,8 @@ console.log(stock)
 console.log(brand)
 */
 
-const transaction = (type, { price }) =>{
-    console.log(price)
+const transaction = (type, { price = 0,label ='',stock = 0} = {}) =>{
+    console.log(type, price,label,stock)
 }
 
 transaction('order', product)
